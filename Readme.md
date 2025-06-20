@@ -14,7 +14,8 @@ If you haven’t already activated your virtual environment, run:
 source path/to/venv/bin/activate
 pip install ipykernel
 python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"
-jupyter notebook
+jupyter notebook --notebook-dir=$(pwd)
+
 ```
 
 ### Choose the Correct Kernel
